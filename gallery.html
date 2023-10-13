@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .img1 {
+        transition: all ease 1.4s;
+        height: 340px;
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: 5s;
+        animation-duration: 5s;
+        -webkit-animation-name: spin;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 3s;
+        -webkit-animation-duration: 3s;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .img2 {
+        transition: all ease 1.4s;
+        height: 340px;
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: 5s;
+        animation-duration: 5s;
+        -webkit-animation-name: spin;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 3s;
+        -webkit-animation-duration: 3s;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+
+
+    .img3 {
+        transition: all ease 1.4s;
+        height: 340px;
+
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: 5s;
+        animation-duration: 5s;
+        -webkit-animation-name: spin;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 3s;
+        -webkit-animation-duration: 3s;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+
+    .img4 {
+        transition: all ease 1.4s;
+        height: 340px;
+
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: 5s;
+        animation-duration: 5s;
+        -webkit-animation-name: spin;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 3s;
+        -webkit-animation-duration: 3s;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .img5 {
+        transition: all ease 1.4s;
+        height: 340px;
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: 5s;
+        animation-duration: 5s;
+        -webkit-animation-name: spin;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 3s;
+        -webkit-animation-duration: 3s;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .img6 {
+        transition: all ease 1.4s;
+        height: 340px;
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: 5s;
+        animation-duration: 5s;
+        -webkit-animation-name: spin;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 3s;
+        -webkit-animation-duration: 3s;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .img7 {
+        transition: all ease 1.4s;
+        height: 340px;
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: 5s;
+        animation-duration: 5s;
+        -webkit-animation-name: spin;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 3s;
+        -webkit-animation-duration: 3s;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .img8 {
+        transition: all ease 1.4s;
+        height: 340px;
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-iteration-count: s;
+        animation-duration: 2s;
+        -webkit-animation-name: spin;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: 3s;
+        -webkit-animation-duration: 3s;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+</style>
+
+<body>
+
+    <div class="navbar">
+        <nav class="navbar navbar-default navbar-expand-lg ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html" target="_blank"><img class="img01" src="Handicrafts__2_-removebg-preview.png"
+                            alt="" srcset=""></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" target="_blank">Handicrafts
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="iron .html" target="_blank">Iron Handicraft</a></li>
+                            <li><a href="w.html" target="_blank">Wooden Handicraft</a></li>
+                            <li><a href="glass .html" target="_blank">Glass Handicraft</a></li>
+                            <li><a href="brass .html" target="_blank">Brass Handicraft</a></li>
+                            <li><a href="Aluminium .html" target="_blank">Almunium Handicraft </a></li>
+                            <li><a href="decorative.html" target="_blank">Handicraft Decorative</a></li>
+                            <li><a href="tablewares.html" target="_blank">Tabel wares</a></li>
+                            <li><a href="homedecor.html" target="_blank">Home Decor</a></li>
+                            <li><a href="candle.html" target="_blank">Candle Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="one" href="gallery.html" target="_blank">Gallery</a></li>
+                    <li><a class="two" href="About.html" target="_blank">About</a></li>
+                    <li><a class="three" href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn0">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="full-image" id="fullImgBox">
+            <img src="img/1.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="animation1" data-aos="fade" data-aos-delay="50" data-aos-duration="1000">
+            <div class="img-gallery">
+                <div>
+                    <h1 class="head1">ALIMUNIUM HANDICRAFTS</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img1" src="alum handicraft/a1.jpg" onclick="openFullImg(this.src)">
+                <img class="img2" src="alum handicraft/a2.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="alum handicraft/a3.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="alum handicraft/a4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="alum handicraft/a5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="alum handicraft/a6.jpg" onclick="openFullImg(this.src)">
+                <img class="img7" src="alum handicraft/a7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="alum handicraft/a8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="alum handicraft/a9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="alum handicraft/a10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="alum handicraft/a11.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="alum handicraft/a12.jpg" onclick="openFullImg(this.src)">
+                <div>
+                    <h1 class="head">BRASS HANDICRAFTS</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img1" src="b1.jpg" onclick="openFullImg(this.src)">
+                <img class="img2" src="b2.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="b4.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="b4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="b5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="b6.jpg" onclick="openFullImg(this.src)">
+                <img class="img7" src="b7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="b8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="b9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="b10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="b11.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="b12.jpg" onclick="openFullImg(this.src)">
+                <div>
+                    <h1 class="head">CANDLE ACCESSORIES</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img1" src="Candle Accessories/c1.jpg" onclick="openFullImg(this.src)">
+                <img class="img2" src="Candle Accessories/c2.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="Candle Accessories/c3.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="Candle Accessories/c4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="Candle Accessories/c5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="Candle Accessories/c6.jpg" onclick="openFullImg(this.src)">
+                <img class="img7" src="Candle Accessories/c7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="Candle Accessories/c8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="Candle Accessories/c9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="Candle Accessories/c10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="Candle Accessories/c11.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="Candle Accessories/c12.jpg" onclick="openFullImg(this.src)">
+
+                <div>
+                    <h1 class="head">GLASS HANDICRAFTS</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img1" src="glass/g1.jpg" onclick="openFullImg(this.src)">
+                <img class="img2" src="glass/g2.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="glass/g3.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="glass/g4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="glass/g5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="glass/g6.jpg" onclick="openFullImg(this.src)">
+                <img class="img7" src="glass/g7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="glass/g8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="glass/g9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="glass/g10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="glass/g11.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="glass/g12.jpg" onclick="openFullImg(this.src)">
+                <div>
+                    <h1 class="head">HANDICRAFTS DECORATIVE</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img1" src="handicrafts decorative/hd1.jpg" onclick="openFullImg(this.src)">
+                <img class="img2" src="handicrafts decorative/hd2.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="handicrafts decorative/hd3.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="handicrafts decorative/hd4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="handicrafts decorative/hd5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="handicrafts decorative/hd6.jpg" onclick="openFullImg(this.src)">
+                <img class="img7" src="handicrafts decorative/hd7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="handicrafts decorative/hd8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="handicrafts decorative/hd9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="handicrafts decorative/hd10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="handicrafts decorative/hd11.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="handicrafts decorative/hd12.jpg" onclick="openFullImg(this.src)">
+                <div>
+                    <h1 class="head">HOME DECORS</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img1" src="d1.jpg" onclick="openFullImg(this.src)">
+                <img class="img2" src="d2.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="d3.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="d4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="d5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="d6.jpg" onclick="openFullImg(this.src)">
+                <img class="img7" src="d7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="d8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="d9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="d10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="d11.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="d12.jpg" onclick="openFullImg(this.src)">
+                <div>
+                    <h1 class="head">IRON HANDICRAFTS</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img1" src="i1.jpg" onclick="openFullImg(this.src)">
+                <img class="img2" src="i2.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="i3.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="i4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="i5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="i6.png" onclick="openFullImg(this.src)">
+                <img class="img7" src="i7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="i8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="i9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="i10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="i11.jpeg" onclick="openFullImg(this.src)">
+                <img class="img8" src="i12.jpg" onclick="openFullImg(this.src)">
+                <div>
+                    <h1 class="head">TABLE HANDICRAFTS</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img1" src="table wares/t1.jpg" onclick="openFullImg(this.src)">
+                <img class="img2" src="table wares/t2.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="table wares/t3.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="table wares/t4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="table wares/t5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="table wares/t6.jpg" onclick="openFullImg(this.src)">
+                <img class="img7" src="table wares/t7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="table wares/t8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="table wares/t9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="table wares/t10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="table wares/t11.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="table wares/t12.jpg" onclick="openFullImg(this.src)">
+                <div>
+                    <h1 class="head">WOODEN HANDICRAFTS</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <img class="img2" src="wooden/w2.png" onclick="openFullImg(this.src)">
+                <img class="img1" src="wooden/w1.jpg" onclick="openFullImg(this.src)">
+                <img class="img3" src="wooden/w3.jpg" onclick="openFullImg(this.src)">
+                <img class="img4" src="wooden/w4.jpg" onclick="openFullImg(this.src)">
+                <img class="img5" src="wooden/w5.jpg" onclick="openFullImg(this.src)">
+                <img class="img6" src="wooden/w6.jpg" onclick="openFullImg(this.src)">
+                <img class="img7" src="wooden/w7.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="wooden/w8.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="wooden/w9.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="wooden/w10.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="wooden/w11.jpg" onclick="openFullImg(this.src)">
+                <img class="img8" src="wooden/w12.jpg" onclick="openFullImg(this.src)">
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footerhead">
+              <h4 class="footerhead1">Information</h4>
+              <h4 class="footerhead2">Opening Hours</h4>
+              <h4 class="footerhead3">Contact</h4>
+              <h4 class="footerhead4">Follow Us</h4>
+            </div>
+            <div class="footerpara">
+              <a class="footerpara1" href="About.html" target="_blank">About</a>
+              <h4 class="footerpara2">Monday To Friday: 9.00am-9.00pm</h4>
+              <img class="imghome" src="thin-line-home-house-icon-white-background-98118275-removebg-preview.png" alt=""
+                srcset="">
+              <h4 class="footerpara3">Aptech North Nazimabad Branch</h4>
+              <a href="https://www.facebook.com/" target="_blank"> <img class="fbicon"
+                  src="371907490_FACEBOOK_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+              <a href="https://www.linkedin.com/feed/" target="_blank"><img class="LIicon"
+                  src="372102050_LINKEDIN_ICON_TRANSPARENT_1080.gif" alt="" srcset=""></a>
+              <a href="https://www.instagram.com/" target="_blank"> <img class="IGicon"
+                  src="371907300_INSTAGRAM_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+              <a href="https://twitter.com/home?lang=en" target="_blank"> <img class="TWicon"
+                  src="371907030_TWITTER_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+            </div>
+            <div class="footerpara">
+              <a class="footerpara1" href="gallery.html" target="_blank">Gallery</a>
+              <h4 class="footerpara2">Sunday Off</h4>
+              <img class="imgmail" src="download-removebg-preview (3).png" alt="" srcset="">
+              <h4 class="footerpara3">contact.aptech@gmail.com</h4>
+            </div>
+            <div class="footerpara">
+              <a class="footerpara1" href="Aluminium .html" target="_blank">Products</a>
+              <img class="imgphone"
+                src="phone-icon-telephone-icon-which-i-going-to-present-you-unique-you-totally-different-any-other-icons-you-111739308-removebg-preview.png"
+                alt="" srcset="">
+              <h4 class="footerpara3">03001234567</h4>
+            </div>
+            <hr class="line">
+            <p class="rights"> All Rights Reserved | Abdullah</p>
+          </footer>
+        <a href="#" class="scroll"><span class="material-symbols-outlined">
+                arrow_upward
+            </span></a>
+        <script>
+
+            var fullImgBox = document.getElementById("fullImgBox");
+            var fullImg = document.getElementById("fullImg");
+
+            function openFullImg(pic) {
+                fullImgBox.style.display = "flex";
+                fullImg.src = pic;
+            }
+
+            function closeFullImg() {
+                fullImgBox.style.display = "none";
+            }
+
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>

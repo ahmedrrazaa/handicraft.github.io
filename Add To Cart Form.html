@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet"
+    href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Form</title>
+</head>
+<style>
+    *{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    html{
+    scroll-behavior: smooth;
+}
+.img1{
+    height: 190px;
+    width: 190px;
+    margin-top: -72px;
+    margin-bottom: -60px;
+    transition: all ease-in-out 0.9s;
+}
+.img1:hover{
+    width: 200px;
+}
+.navbar{
+    /* padding: 6px; */
+    margin-top: 2px;
+    margin-bottom: 60px;
+}
+.dropdown{
+    margin-left: 190px;
+    margin-right: 60px;
+}
+.dropdown-toggle{
+    transition: all ease-in-out 0.9s;
+}
+.one{
+    margin-right: 60px;
+    transition: all ease-in-out 0.9s;
+}
+.two{
+    margin-right: 60px;
+    transition: all ease-in-out 0.9s;
+}
+.three{
+    transition: all ease-in-out 0.9s;
+}
+.form-group{
+    margin-left: 95px;
+}
+.btn0{
+    background-color: rgb(209, 209, 209);
+    color: black;
+    border: 1px solid rgb(240, 240, 240);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all ease-in-out 0.9s;
+}
+.btn0:hover{
+    background-color: rgb(138, 138, 138);
+    color: white;
+}
+    .container{
+        display: flex;
+    }
+    .gif{
+        height: 450px;
+        width: 300px;
+        margin-top: 115px;
+        margin-left: 85px;
+    }
+    .box{
+        border: 1px solid rgb(226, 226, 226);
+        background-color: whitesmoke;
+        margin-top: 30px;
+        width: 600px;
+        height: 550px;
+        margin-left: 120px;
+        box-shadow: lightgrey 4px 5px 6px 1px ;
+        border-radius: 4px;
+    }
+    .form{
+        margin-top: 30px;
+    }
+    .head{
+        text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 24px;
+        letter-spacing: 5px;
+        margin-left: 50px;
+        margin-top: -5px;
+        margin-bottom:30px;
+    }
+    .label{
+        margin-left: 165px;
+        color: black;
+        font-size: 14px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight:400;
+    }
+    .input{
+        margin-left: 170px;
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 1px solid black;
+        width: 300px;
+    }
+    .cash{
+        margin-left: 170px;
+        color: black;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.5px;
+        font-weight:400;
+    }
+    .Payment{
+        margin-left: 20px;
+        color: black;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.5px;
+        font-weight:400;
+    }
+    .btn{
+        margin-left: 170px;
+        color: black;
+        width: 300px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 4px;
+        transition: all ease 0.9s;
+        border: 0.2px solid black;
+        font-size: 14px;
+        padding: 4px;
+    }
+    .btn:hover{
+        border-radius: 16px;
+    }
+    .cart{
+        margin-left: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    .footer{
+    background-color: rgb(238, 238, 238);
+    margin-top: 100px;
+    margin-bottom: -200px;
+}
+.footerhead{
+    display: flex;
+    margin-bottom: 30px;
+}
+.footerhead1{
+    margin-left: 150px;
+    padding: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    border-bottom: 1px solid blue;
+}
+.footerhead2{
+    margin-left: 200px;
+    padding: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    border-bottom: 1px solid blue;
+}
+.footerhead3{
+    margin-left: 200px;
+    padding: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    border-bottom: 1px solid blue;
+
+}
+.footerhead4{
+    margin-left: 200px;
+    padding: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    border-bottom: 1px solid blue;
+}
+.footerpara{
+    display: flex;
+    margin-bottom: 10px;
+}
+.footerpara1{
+    margin-left: 150px;
+    padding: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size:13px ; 
+}
+.footerpara2{
+    margin-left: 250px;
+    padding: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size:13px ; 
+}
+.footerpara3{
+    padding: 6px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size:13px ; 
+}
+.imghome{
+    margin-left: 120px;
+    width: 50px;
+    height: 50px;
+}
+.fbicon{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+.LIicon{
+    margin-left: 6px;
+    width: 50px;
+    height: 50px;
+}
+.IGicon{
+    margin-left: 6px;
+    width: 50px;
+    height: 50px;
+}
+.TWicon{
+    margin-left: 6px;
+    width: 50px;
+    height: 50px;
+}
+.imgmail{
+    margin-left: 260px;
+    width: 40px;
+    height: 40px;
+}
+.imgphone{
+    margin-left: 575px;
+    width: 40px;
+    height: 40px;
+}
+.line{
+    color: black;
+    background-color: black;
+    border: 0.00009px solid black;
+}
+.rights{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    padding: 4px;
+    font-size: 17px;
+    margin-bottom: 80px;
+}
+.scroll{
+    position: fixed;
+    width: 50px;
+    height: 40px;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    bottom: 40px; 
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 23px;
+    line-height: 50px;
+    border-bottom-left-radius:102px;
+    border-bottom-right-radius:102px ;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    transition: ease all 0.9s;
+}
+.scroll:hover{
+    width: 54px;
+    height: 44px;
+    color: white;
+}
+@media(max-width:768px){
+    .container{
+        display: flex;
+    }
+    .gif{
+        height: 350px;
+        width: 130px;
+        margin-top: 120px;
+        margin-left: 10px;
+    }
+    .box{
+        border: 1px solid rgb(226, 226, 226);
+        background-color: whitesmoke;
+        margin-top: 30px;
+        width: 300px;
+        height: 530px;
+        margin-left: 20px;
+        box-shadow: lightgrey 4px 5px 6px 1px ;
+        border-radius: 4px;
+    }
+    .form{
+        margin-top: 30px;
+    }
+    .head{
+        text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        letter-spacing: 5px;
+        margin-left: 20px;
+        margin-top: -5px;
+        margin-bottom:30px;
+    }
+    .label{
+        margin-left: 30px;
+        color: black;
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight:400;
+    }
+    .input{
+        margin-left: 30px;
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 1px solid black;
+        width: 230px;
+        font-size: 12px;
+    }
+    .cash{
+        /* margin-left: 170px; */
+        color: black;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.5px;
+        font-weight:400;
+        font-size: 12px;
+        margin-bottom: -20px;
+    }
+    .Payment{
+        /* margin-left: 20px; */
+        color: black;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 0.5px;
+        font-weight:400;
+        font-size: 12px;
+    }
+    .btn{
+        margin-left: 35px;
+        color: black;
+        width:185px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 4px;
+        transition: all ease 0.9s;
+        border: 0.2px solid black;
+        font-size: 14px;
+        padding: 4px;
+    }
+    .btn:hover{
+        border-radius: 16px;
+    }
+    .cart{
+        margin-left: 10px;
+        height: 45px;
+        width: 45px;
+    }
+    .footer {
+        background-color: rgb(238, 238, 238);
+    }
+    
+    .footerhead {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    
+    .footerhead1 {
+        margin-left: 20px;
+        padding: 2px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        border-bottom: 1px solid blue;
+        font-size: 16px;
+    }
+    
+    .footerhead2 {
+        margin-left: 33px;
+        padding: 2px;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        border-bottom: 1px solid blue;
+    }
+    
+    .footerhead3 {
+        margin-left: 33px;
+        padding: 2px;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        border-bottom: 1px solid blue;
+    
+    }
+    
+    .footerhead4 {
+        margin-left: 33px;
+        padding: 2px;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        border-bottom: 1px solid blue;
+    }
+    
+    .footerpara {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    .footerpara1 {
+        margin-left: 30px;
+        padding: 2px;
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        font-size: 13px;
+    }
+    
+    .footerpara2 {
+        margin-left: 80px;
+        padding: 2px;
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        font-size: 13px;
+    }
+    
+    .footerpara3 {
+        padding: 2px;
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        font-size: 13px;
+    }
+    .footerparaa3{
+        padding: 2px;
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        font-size: 13px;
+    }
+    .imghome {
+        margin-left: 30px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .fbicon {
+        margin-left: -12px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .LIicon {
+        margin-left: -4px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .IGicon {
+        margin-left: -4px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .TWicon {
+        margin-left: -4px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .imgmail {
+        margin-left: 50px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .imgphone {
+        margin-left: 190px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .line {
+        color: black;
+        background-color: black;
+        border: 0.00009px solid black;
+    }
+    
+    .rights {
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        padding: 4px;
+        font-size: 17px;
+    }
+    
+    #preloader {
+        background: rgb(255, 255, 255) url(721409a501a6122cbafc4f29eec69dc0.gif) no-repeat center;
+        background-size: 20%;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 999999;
+    }
+    
+    .scroll {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(66, 66, 66);
+        color: white;
+        bottom: 40px;
+        right: 50px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 12px;
+        line-height: 50px;
+        border-bottom-left-radius: 102px;
+        border-bottom-right-radius: 102px;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        transition: ease all 0.9s;
+    }
+    
+    .scroll:hover {
+        width: 34px;
+        height: 34px;
+        color: white;
+    }
+}
+</style>
+<body>
+    <div class="navbar">
+        <nav class="navbar navbar-default navbar-expand-lg ">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a href="index.html" target="_blank"> <img class="img1" src="Handicrafts__2_-removebg-preview.png" alt=""
+                  srcset=""></a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" target="_blank">Handicrafts
+                  <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="iron .html" target="_blank">Iron Handicraft</a></li>
+                  <li><a href="w.html" target="_blank">Wooden-Handicraft Handicraft</a></li>
+                  <li><a href="glass .html" target="_blank">Glass Handicraft</a></li>
+                  <li><a href="brass .html" target="_blank">Brass Handicraft</a></li>
+                  <li><a href="Aluminium .html" target="_blank">Almunium Handicraft </a></li>
+                  <li><a href="decorative.html" target="_blank">Handicraft Decorative</a></li>
+                  <li><a href="tablewares.html" target="_blank">Tabel wares</a></li>
+                  <li><a href="homedecor.html" target="_blank">Home Decor</a></li>
+                  <li><a href="candle.html" target="_blank">Candel Accessories</a></li>
+                </ul>
+              </li>
+              <li><a class="one" href="gallery.html" target="_blank">Gallery</a></li>
+              <li><a class="two" href="About.html" target="_blank">About</a></li>
+              <li><a class="three" href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" action="/action_page.php">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn0">Search</button>
+            </form>
+          </div>
+        </nav>
+    <div class="container">
+    <div class="giff">
+        <img class="gif" src="SpottedBriskDuckbillplatypus-max-1mb.gif" alt="" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+    </div>
+    <div class="box" data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+        <form class="form" action="" >
+            <h3 class="head">Shipping Details</h3>
+        <label class="label" for="Name">Name</label>
+        <br><br>
+        <input class="input" type="Name" id="Name" placeholder="Full Name" required>
+        <br><br>
+        <label class="label" for="Email">Email</label>
+        <br><br>
+        <input class="input" type="mail"  name="" placeholder="example@gmail.com" id="mail" required>
+        <br><br>
+        <label class="label" for="Address">Address</label>
+        <br><br>
+        <input class="input" type="address" id="address" placeholder="Street No" required>
+        <br><br>
+        <label class="label" for="Country">Country</label>
+        <br><br>
+        <input class="input" class="input" list="list" type="country" id="country" placeholder="Home Place">
+        <datalist id="list">
+            <option value="Karachi">
+            <option value="Lahore">
+            <option value="Peshawar">
+            <option value="Islamabad">
+            <option value="Faisalabad">
+            <option value="Multan">
+        </datalist>
+        <br><br>
+        <label class="cash" for="Cash On Delivery">Cash On Delivery</label>
+        <input class="input1" type="checkbox" name="" id="">
+        <label class="Payment" for="Online Payment">Online Payment</label>
+        <input class="input2" type="checkbox" name="" id="">
+        <br><br>
+        <input onclick="database(); onclick=myFunction()" type="submit" value="submit" class="btn">
+       <a href="#"><img class="cart" src="images-removebg-preview.png" alt=""> </a> 
+    </form>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footerhead">
+      <h4 class="footerhead1">Information</h4>
+      <h4 class="footerhead2">Opening Hours</h4>
+      <h4 class="footerhead3">Contact</h4>
+      <h4 class="footerhead4">Follow Us</h4>
+    </div>
+    <div class="footerpara">
+      <a class="footerpara1" href="About.html" target="_blank">About</a>
+      <h4 class="footerpara2">Monday To Friday: 9.00am-9.00pm</h4>
+      <img class="imghome" src="thin-line-home-house-icon-white-background-98118275-removebg-preview.png" alt=""
+        srcset="">
+      <h4 class="footerpara3">Aptech North Nazimabad Branch</h4>
+      <a href="https://www.facebook.com/" target="_blank"> <img class="fbicon"
+          src="371907490_FACEBOOK_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+      <a href="https://www.linkedin.com/feed/" target="_blank"><img class="LIicon"
+          src="372102050_LINKEDIN_ICON_TRANSPARENT_1080.gif" alt="" srcset=""></a>
+      <a href="https://www.instagram.com/" target="_blank"> <img class="IGicon"
+          src="371907300_INSTAGRAM_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+      <a href="https://twitter.com/home?lang=en" target="_blank"> <img class="TWicon"
+          src="371907030_TWITTER_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+    </div>
+    <div class="footerpara">
+      <a class="footerpara1" href="gallery.html" target="_blank">Gallery</a>
+      <h4 class="footerpara2">Sunday Off</h4>
+      <img class="imgmail" src="download-removebg-preview (3).png" alt="" srcset="">
+      <h4 class="footerpara3">contact.aptech@gmail.com</h4>
+    </div>
+    <div class="footerpara">
+      <a class="footerpara1" href="candle.html" target="_blank">Products</a>
+      <img class="imgphone"
+        src="phone-icon-telephone-icon-which-i-going-to-present-you-unique-you-totally-different-any-other-icons-you-111739308-removebg-preview.png"
+        alt="" srcset="">
+      <h4 class="footerpara3">03001234567</h4>
+    </div>
+    <hr class="line">
+    <p class="rights"> All Rights Reserved | Abdullah</p>
+  </footer>
+  <a href="#" class="scroll"><span class="material-symbols-outlined">
+      arrow_upward
+    </span></a>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+      function database(){
+          var Name=document.getElementById('Name').value;
+          var Email=document.getElementById('mail').value;
+          var Address=document.getElementById('address').value;
+          var Country=document.getElementById('country').value;
+          sessionStorage.setItem('Name',Name);
+          sessionStorage.getItem('Name');
+          sessionStorage.setItem('mail',Email);
+          sessionStorage.getItem('mail');
+          sessionStorage.setItem('address',Address);
+          sessionStorage.getItem('address');
+          sessionStorage.setItem('country',Country);
+          sessionStorage.getItem('country');
+        }
+        </script>
+        <script>
+            function myFunction() {
+               let age=alert ("Your Order Has Been Placed. Your Order Will Be Delivered In 3 To 4 Working Days!")
+            }
+        </script>
+</body>
+</html>

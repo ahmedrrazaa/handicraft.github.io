@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Circle Wall</title>
+</head>
+<style>
+    .img1 {
+        height: 190px;
+        width: 190px;
+        margin-top: -72px;
+        margin-bottom: -60px;
+        transition: all ease-in-out 0.9s;
+    }
+
+    .img1:hover {
+        width: 200px;
+    }
+
+    .navbar {
+        padding: 6px;
+    }
+
+    .dropdown {
+        margin-left: 190px;
+        margin-right: 60px;
+    }
+
+    .dropdown-toggle {
+        transition: all ease-in-out 0.9s;
+    }
+
+    .one {
+        margin-right: 60px;
+        transition: all ease-in-out 0.9s;
+    }
+
+    .two {
+        margin-right: 60px;
+        transition: all ease-in-out 0.9s;
+    }
+
+    .three {
+        transition: all ease-in-out 0.9s;
+    }
+
+    .form-group {
+        margin-left: 95px;
+    }
+
+    .btn0 {
+        background-color: rgb(209, 209, 209);
+        color: black;
+        border: 1px solid rgb(240, 240, 240);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 6px;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: all ease-in-out 0.9s;
+    }
+
+    .btn0:hover {
+        background-color: rgb(138, 138, 138);
+        color: white;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .card1 {
+        margin-left: 155px;
+    }
+
+    .img {
+        margin-top: 30px;
+        width: 400px;
+        height: 360px;
+        transition: 0.9s all ease-in;
+        border-radius: 4px;
+    }
+    .img:hover{
+        width: 420px;
+        height: 380px;
+        border-radius: 16px;
+    }
+    .card2 {
+        margin-left: 110px;
+        margin-top: -30px;
+    }
+    .head{
+        padding: 4px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+    }
+    .head1{
+        cursor: pointer;
+        padding: 4px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        transition: all ease 0.9s;
+        border-bottom: 1px solid gray;
+        width: 220px;
+    }
+    .head1:hover{
+        font-size: 25px;
+        border: none;
+    }
+    .price{
+        letter-spacing: 0.5px;
+        color: red;
+        padding: 6px;
+        font-size: 17px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .para{
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .detail{
+        padding: 4px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-bottom: 1px solid lightgray;
+        width: 230px;
+    }
+    .details{
+        transition: 0.6s all ease-in-out;
+    }
+    .details:hover{
+        font-size: 16px;
+    }
+    .footer {
+        background-color: rgb(238, 238, 238);
+        margin-top: 100px;
+        margin-bottom: -100px;
+    }
+
+    .footerhead {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .footerhead1 {
+        margin-left: 150px;
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        border-bottom: 1px solid blue;
+    }
+
+    .footerhead2 {
+        margin-left: 200px;
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        border-bottom: 1px solid blue;
+    }
+
+    .footerhead3 {
+        margin-left: 200px;
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        border-bottom: 1px solid blue;
+
+    }
+
+    .footerhead4 {
+        margin-left: 200px;
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        border-bottom: 1px solid blue;
+    }
+
+    .footerpara {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .footerpara1 {
+        margin-left: 150px;
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        font-size: 13px;
+    }
+
+    .footerpara2 {
+        margin-left: 250px;
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        font-size: 13px;
+    }
+
+    .footerpara3 {
+        padding: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        font-size: 13px;
+    }
+
+    .imghome {
+        margin-left: 120px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .fbicon {
+        margin-left: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .LIicon {
+        margin-left: 6px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .IGicon {
+        margin-left: 6px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .TWicon {
+        margin-left: 6px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .imgmail {
+        margin-left: 260px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .imgphone {
+        margin-left: 575px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .line {
+        color: black;
+        background-color: black;
+        border: 0.00009px solid black;
+    }
+
+    .rights {
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: black;
+        padding: 4px;
+        font-size: 17px;
+        margin-bottom: 80px;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <nav class="navbar navbar-default ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html" target="_blank"> <img class="img1" src="Handicrafts__2_-removebg-preview.png"
+                            alt="" srcset=""></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" target="_blank">Handicrafts
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" target="_blank">Iron Handicraft</a></li>
+                            <li><a href="#" target="_blank">Wood Handicraft</a></li>
+                            <li><a href="#" target="_blank">Glass Handicraft</a></li>
+                            <li><a href="#" target="_blank">Brass Handicraft</a></li>
+                            <li><a href="#" target="_blank">Almunium Handicraft </a></li>
+                            <li><a href="#" target="_blank">Handicraft Decorative</a></li>
+                            <li><a href="#" target="_blank">Glass Handicraft</a></li>
+                            <li><a href="#" target="_blank">Tabel wares</a></li>
+                            <li><a href="#" target="_blank">Home Decor</a></li>
+                            <li><a href="#" target="_blank">Candel Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="one" href="gallery.html" target="_blank">Gallery</a></li>
+                    <li><a class="two" href="About.html" target="_blank">About</a></li>
+                    <li><a class="three" href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+                <form class="navbar-form navbar-left" action="/action_page.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn0">Submit</button>
+                </form>
+            </div>
+        </nav>
+        <div class="container" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1100">
+            <div class="card1">
+                <img class="img" src="brass_circle_wall-10-removebg-preview.png" alt="">
+            </div>
+            <div class="card2" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1100">
+                <h2 class="head">Circle Wall</h2>
+                <hr>
+                <br>
+                <p class="price">Price:1,299.00</p>
+                <p class="para">Including GST</p>
+                <p class="para">Delivery Charges : 160rs (Only In Karachi)</p>
+                <p class="para">Delivery Charges Outside Karachi (All Over Pakistan) : 350rs</p>
+                <p class="para">In Stock</p>
+                <br>
+                <hr>
+                <details class="details">
+                <summary class="summary1">
+                    <h3 class="head1">Product Overview</h3>
+                </summary>
+                    <ol>
+                        <li>
+                            <p class="detail">Pure Brass Material</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p class="detail">2kg Net Weight</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p class="detail">3 Month Warranty</p>
+                        </li>
+                        <br>
+                        <li>
+                            <p class="detail">15 Day Money Back Guarantee</p>
+                        </li>
+                        </li>
+                    </ol>
+                </details>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footerhead">
+                <h4 class="footerhead1">Information</h4>
+                <h4 class="footerhead2">Opening Hours</h4>
+                <h4 class="footerhead3">Contact</h4>
+                <h4 class="footerhead4">Follow Us</h4>
+            </div>
+            <div class="footerpara">
+                <a class="footerpara1" href="">About</a>
+                <h4 class="footerpara2">Monday To Friday: 9.00am-9.00pm</h4>
+                <img class="imghome" src="thin-line-home-house-icon-white-background-98118275-removebg-preview.png"
+                    alt="" srcset="">
+                <h4 class="footerpara3">Aptech North Nazimabad Branch</h4>
+                <a href="https://www.facebook.com/" target="_blank"> <img class="fbicon" src="371907490_FACEBOOK_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img class="LIicon" src="372102050_LINKEDIN_ICON_TRANSPARENT_1080.gif" alt="" srcset=""></a>
+                <a href="https://www.instagram.com/" target="_blank"> <img class="IGicon" src="371907300_INSTAGRAM_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+                <a href="https://twitter.com/home?lang=en" target="_blank"> <img class="TWicon" src="371907030_TWITTER_ICON_TRANSPARENT_400.gif" alt="" srcset=""></a>
+            </div>
+            <div class="footerpara">
+                <a class="footerpara1" href="">Gallery</a>
+                <h4 class="footerpara2">Sunday Off</h4>
+                <img class="imgmail" src="download-removebg-preview (3).png" alt="" srcset="">
+                <h4 class="footerpara3">contact.aptech@gmail.com</h4>
+            </div>
+            <div class="footerpara">
+                <a class="footerpara1" href="">Products</a>
+                <img class="imgphone"
+                    src="phone-icon-telephone-icon-which-i-going-to-present-you-unique-you-totally-different-any-other-icons-you-111739308-removebg-preview.png"
+                    alt="" srcset="">
+                <h4 class="footerpara3">03001234567</h4>
+            </div>
+            <hr class="line">
+            <p class="rights"> All Rights Reserved | Abdullah</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>
